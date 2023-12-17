@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJkAAACUCAYAAACAwotkAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACmElEQVR4nO3dwUkjYRiA4VEW8agHsQdPYglWYDM24c0qbMCzJeTswRpEVBREzBphCdk9Ji8zG54Hfkj+hOEjecMEJpCdYRjmA4R2xx6A7ScyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiP3a+wBNun09HS4urr6uf329jY8Pz+vPL7Ye3l5Wdlb3F/s/3F/fz/c3t6uPcv5+flwdna29nFms9lwd3e39nHGNt+W9f3Gztd1c3OzkVmur6/XnmVhcZyxX9d1l9MlOZGRExk5kUU+Pz/HHmEyREZOZORERk5k5EQWeXx8HHuEyRBZ5P39fewRJkNk5ERGTmTkREZOZBGXlZZERk5k5ERGTmTkREZOZJGPj4+xR5gMkUVeX1/HHmEyREZOZORERk5kEZeVlkRGTmTkREZOZORERk5k5EQW+fr6GnuEyRBZ5OnpaewRJkNk5ERGTmQR38mWRBYR2ZLIyImMnMjIiYzcVv230ibs7+8Px8fHK3t7e3vD4eHhP889OjoadndXP6cHBwc/xzg5OUnn/J+I7C8XFxc/i81xuiQnMnIiIycyciIjJzJyIiMnMnIiIycyciIjJzJyIiMnMnIiIycyclv1o8WHh4fh8vJy7DE2ajabjT3C2na+13zsIdhuTpfkREZOZORERk5k5ERGTmTkREZOZORERk5k5ERGTmTkREZOZORERk5k5ERGTmTkREZOZORERk5k5ERGTmTkREZOZORERk5k5ERGTmTkREZOZORERk5k5ERGTmTkREZOZORERk5k5ERG7jeW6Excj54zGAAAAABJRU5ErkJggg==" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Underwood Brwr</title>
+
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Custom css -->
+    
+    <script type="module" crossorigin src="/test-proj/assets/index-3d6347e2.js"></script>
+    <link rel="stylesheet" href="/test-proj/assets/index-0625b9e6.css">
+  </head>
+  <body class="position-relative">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand p-0" href="/">
+          <img src="data:image/png;base64,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" />
+        </a>
+        <button class="navbar-toggler" type="button" id="burgerMenuBtn">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item p-0 d-flex align-items-center">
+              <a class="nav-link p-0" aria-current="page" href="/"> Home </a>
+            </li>
+            <li class="nav-item p-0">
+              <button class="border-0" id="contactBtn">Contact us</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="root"></div>
+    <div id="contactModal"></div>
+    <div id="successModal"></div>
+    <div id="burgerMenu"></div>
+    <footer class="container-fluid m-0">
+      <div
+        class="row m-0 justify-content-between align-items-md-center align-items-top"
+      >
+        <div class="col-md-5 col-12 p-0 order-md-0 order-1">
+          <p class="m-0">
+            &copy; 2023 Underwood Brwr, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="col-md-4 col-6 p-0">
+          <ul class="m-0 p-0 row justify-content-between">
+            <li class="d-inline col-md-4 col-12 p-0 text-center">
+              <p class="p-0 m-0 border-bottom border-2">Privacy Policy</p>
+            </li>
+            <li class="d-inline col-md-5 col-12 p-0 text-center">
+              <p class="p-0 m-0 border-bottom border-2">Terms of delivery</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-6 p-0">
+          <p class="m-0 text-end">
+            Follow us
+            <span class="ms-3"
+              ><a><img src="/test-proj/assets/facebook-6676a2bc.svg" /></a
+            ></span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
