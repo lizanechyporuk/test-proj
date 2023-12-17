@@ -16,13 +16,13 @@ import "./style.css";
 
 function App(): JSX.Element {
   return (
-    <Router>
+    <Router basename="/test-proj">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/test-proj" element={<Home />} />
         <Route path="/product/:id" element={<Product />} />
         <Route path="/surpriseproduct" element={<SurpriseProduct />} />
         {/* Add a default route or a 404 page if needed */}
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<Navigate to="/test-proj" />} />
       </Routes>
     </Router>
   );

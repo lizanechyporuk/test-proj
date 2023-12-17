@@ -22,7 +22,7 @@ function BurgerMenu({
         <div className="container-fluid p-0">
           <ul className="navbar-nav">
             <li className="nav-item p-0 mx-auto">
-              <a className="nav-link p-0" aria-current="page" href="/">
+              <a className="nav-link p-0" href="/test-proj">
                 Home
               </a>
             </li>
