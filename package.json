@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist -r https://lizanechyporuk.github.io/test-proj/"
+    "deploy": "vite build && gh-pages -d dist -r https://github.com/lizanechyporuk/test-proj.git"
   },
   "dependencies": {
     "@babel/core": "^7.23.6",
